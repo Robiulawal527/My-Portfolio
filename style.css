@@ -138,76 +138,18 @@
 
   /* Responsive for phone */
 
-  /* General styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-table {
-  width: 100%;
-  max-width: 800px;
-  border: 0;
-  border-spacing: 0;
-  border-collapse: separate;
-  margin: 0 auto;
-}
-
-td {
-  padding: 2.5%;
-  vertical-align: middle;
-}
-
-/* Text alignment */
-.name, .age {
-  text-align: center;
-}
-
-/* Links */
-a {
-  color: #0066cc;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Image styling */
-img {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-}
-
-/* Responsive styling */
-@media screen and (max-width: 768px) {
-  td {
-    display: block;
-    width: 100%;
+  @media only screen and (max-width: 480px) {
+    .name {
+      font-size: 24px;
+    }
   }
 
-  .profile-photo {
-    text-align: center;
-  }
-}
+  /* Responsive for tablet */
 
-@media screen and (max-width: 480px) {
-  td {
-    padding: 5%;
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .name {
+      font-size: 28px;
+    }
   }
 
-  p {
-    font-size: 1rem;
-  }
-  
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  h3 {
-    font-size: 1.2rem;
-  }
-}
+ 
