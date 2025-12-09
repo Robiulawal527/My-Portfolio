@@ -135,3 +135,57 @@
   }
 
 
+  /* Profile photo: round shape and fit */
+  .profile-photo {
+    display: block;
+    width: 180px;
+    height: 180px;
+    max-width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin: 10% auto 0 auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  /* Generic responsive helpers */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Make layout stack on small screens */
+  @media (max-width: 768px) {
+    .name {
+      font-size: 26px;
+    }
+
+    body,
+    td,
+    th,
+    tr,
+    p,
+    a,
+    strong {
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    table {
+      width: 100% !important;
+    }
+
+    table tbody tr td {
+      display: block;
+      width: 100% !important;
+      max-width: 100% !important;
+      padding: 12px !important;
+    }
+
+    /* Ensure hero/profile section centers nicely */
+    td img.profile-photo {
+      margin-top: 16px;
+    }
+  }
+
+
